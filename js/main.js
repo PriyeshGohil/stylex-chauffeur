@@ -22,7 +22,7 @@ $('#contact-submit').click(function(event) {
   
 
   $.ajax({
-    url: "http://www.formspree.io/priyesh114@hotmail.co.uk", 
+    url: "http://www.formspree.io/rtulsidas@yahoo.co.uk", 
     method: "POST",
     data: $( "form" ).serializeArray(),
     dataType: "json",
