@@ -1,0 +1,82 @@
+
+.site-header {
+    border-top: 5px solid $grey-color-dark;
+    padding: 10px 0;
+}
+
+.site-title {
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    float: right;
+    position: relative;
+    top: 10px;
+
+    a#call{
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 0px;
+
+        &:hover{
+            border:none;
+            cursor: default;
+        }    
+    }
+
+    a{
+        margin:0 5px;
+
+        &:hover{
+            border-bottom:solid $red;
+        }
+    }
+    
+
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+
+      
+        a:nth-child(-n+2){
+            display:none;
+        }
+
+        a{
+            margin:0;
+        }
+
+       
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}

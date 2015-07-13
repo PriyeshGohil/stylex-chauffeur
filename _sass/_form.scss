@@ -1,0 +1,32 @@
+/*Form*/
+form#contact {
+    input,textarea, select{
+        display: block;
+        margin: 10px auto;
+        max-width: 300px;
+        width: 100%;
+        padding: 10px;
+
+
+    }
+
+    select{
+        max-width: 325px;
+        width: 100%;
+        background-color: white;
+        color: rgb(185, 169, 177);
+    }
+
+    #contact-submit{
+        border: none;
+        border-radius: 0;
+        font-size: 16px;
+        background-color: rgba(0, 128, 0, 0.53);
+        margin: 10px;
+        max-width: 200px;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+    }
+  
+}

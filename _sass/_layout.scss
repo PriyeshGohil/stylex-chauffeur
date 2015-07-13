@@ -1,0 +1,233 @@
+
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+      float: right;
+    text-align: right;
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+
+    ul li{
+        display: inline;
+
+    }
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+.page-heading {
+    font-size: 42px;
+    
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+.home{
+    background-image: linear-gradient( rgba(5, 5, 5, 0.20), rgba(6, 6, 6, 0.7) ), url("/background.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+    color: white;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.btn{
+  background-color: $red;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
+section{
+      text-align: center;
+  margin-top: 30px;
+}
+
+
+/*our cars*/
+
+.boxWrapper{
+    list-style: none;
+    display: flex;
+    .box{
+          margin: 0 5px;
+
+
+        ul {
+            list-style: none;
+
+            li{
+                padding: 10px;
+            }
+
+            li:nth-child(odd){
+             background-color: #f0f0f0;
+            }
+
+            li:last-child{
+             background-color:rgba(0, 128, 0, 0.53);
+             cursor: pointer;
+            }    
+        }
+    }
+}
+
+
+.BookThis{
+    a{
+        display: block;
+    }
+}
+#cWrapper{
+    a{
+        border: 1px solid;
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
