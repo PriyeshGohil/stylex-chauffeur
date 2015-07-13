@@ -161,6 +161,8 @@
     height: 500px;
     text-align: center;
     color: white;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
     display: flex;
   flex-direction: column;
   justify-content: center;
